@@ -18,7 +18,8 @@ nnoremap [unite]f
 
 " Search for files in the current git project:
 nnoremap [unite]p
-    \ :<C-u>Unite -start-insert file_rec/git:--others:--exclude-standard<CR>
+    \ :<C-u>Unite -start-insert
+        \ file_rec/git:--cached:--others:--exclude-standard<CR>
 
 " MRU:
 nnoremap [unite]m

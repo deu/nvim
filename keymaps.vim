@@ -50,7 +50,7 @@ nnoremap - <C-x>
 " --- Plugins ---
 
 " Unite master key:
-nmap <Space> [unite]
+nmap <silent> <Space> [unite]
 
 " Toggle undotree:
 nnoremap <Leader>u :<C-u>UndotreeToggle<CR>
