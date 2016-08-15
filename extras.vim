@@ -30,3 +30,7 @@ nnoremap <expr> : CmdLineEnter(':')
 cnoremap <silent> <expr> <CR>  CmdLineLeave(':', "\<CR>")
 cnoremap <silent> <expr> <Esc> CmdLineLeave(':', "\<C-c>")
 cnoremap <silent> <expr> <C-c> CmdLineLeave(':', "\<C-c>")
+
+
+" Enable spell check when typing git commit messages:
+autocmd FileType gitcommit setlocal spelllang=en_gb | setlocal spell
