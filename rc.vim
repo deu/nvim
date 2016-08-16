@@ -41,10 +41,12 @@ set pumheight=10                " Number of items in the menu.
 set infercase                   " Smarter case during autocompletion.
 
 " === Clipboard
-if has ('unnamedplus')
-    set clipboard=unnamedplus   " Use the clipboard register if available.
-else
-    set clipboard=unnamed
+if $TERM != 'linux'
+    if has ('unnamedplus')
+        set clipboard=unnamedplus
+    else
+        set clipboard=unnamed
+    endif
 endif
 
 " === Aestetics
@@ -54,4 +56,6 @@ else
     colorscheme strange
 endif
 " Change the cursor when changing modes (if the terminal emulator supports it):
-let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+if $TERM != 'linux'
+    let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+endif

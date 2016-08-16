@@ -23,7 +23,7 @@ nnoremap [unite]p
 
 " MRU:
 nnoremap [unite]m
-    \ :<C-u>Unite neomru/directory neomru/file<CR>
+    \ :<C-u>Unite -start-insert neomru/directory neomru/file<CR>
 
 " Buffers:
 nnoremap [unite]<Space> :<C-u>Unite -start-insert buffer<CR>
