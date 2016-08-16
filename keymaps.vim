@@ -49,8 +49,11 @@ nnoremap - <C-x>
 
 " --- Plugins ---
 
+" fzf master key:
+nmap <silent> <Space> [fzf]
+
 " Unite master key:
-nmap <silent> <Space> [unite]
+nmap <silent> <Tab> [unite]
 
 " Toggle undotree:
 nnoremap <Leader>u :<C-u>UndotreeToggle<CR>

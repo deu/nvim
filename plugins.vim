@@ -13,7 +13,7 @@ Plug 'strange/strange.vim'
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
 " Functionality:
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'dir': g:storedir . '/fzf', 'do': './install --all' }
     \ | Plug 'junegunn/fzf.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/unite.vim'
     \ | Plug 'Shougo/neoyank.vim'

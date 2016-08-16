@@ -38,7 +38,9 @@ autocmd FileType gitcommit
     \ setlocal spelllang=en_gb | setlocal spell |
     \ call setpos('.', [0, 1, 1, 0])
 
+
 " Disable the cursor line in the terminal emulator. It irritatingly stays at
 " the bottom of the window and never moves.
-autocmd TermOpen  * setlocal nocursorline
-autocmd TermClose * setlocal cursorline
+" Also hide the tabline since it's an annoyance in that case anyway.
+autocmd TermOpen  * setlocal nocursorline | setlocal showtabline=0
+autocmd TermClose * setlocal cursorline   | setlocal showtabline=2
