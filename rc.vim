@@ -50,7 +50,7 @@ if $TERM != 'linux'
 endif
 
 " === Aestetics
-if &t_Co == 256 || has("gui_running")
+if &t_Co == 256
     colorscheme xoria256mod
 else
     colorscheme strange

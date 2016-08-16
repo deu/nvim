@@ -3,6 +3,12 @@
 " Pointer to the user's nvim runtime path (e.g. ~/.config/nvim):
 let g:nvim_rp = split(&runtimepath, ',')[0]
 
+" Create the store directory if it doesn't exist:
+let g:storedir = expand(g:nvim_rp . '/store')
+if !isdirectory(g:storedir)
+    call mkdir(g:storedir)
+endif
+
 " Check if vim-plug is installed and install it if it isn't:
 if !filereadable(g:nvim_rp . '/autoload/plug.vim')
     execute '!curl -fLo ' . g:nvim_rp . '/autoload/plug.vim --create-dirs '
