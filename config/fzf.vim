@@ -11,7 +11,7 @@ nnoremap [fzf]a
     \ :<C-u>call fzf#vim#gitfiles('-c -o --directory --exclude-standard',
         \ { 'up': '40%', 'options': '--reverse' .
             \ '  --preview="' .
-                \ 'if [ -d "{}" ]; then ls -1 "{}"; else head "{}"; fi' .
+                \ 'if [ -d "{}" ]; then ls -1 "{}"; else head -n 20 "{}"; fi' .
             \ '" --preview-window=right:50%',
         \ })<CR>
 
