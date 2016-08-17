@@ -12,6 +12,13 @@ Plug 'strange/strange.vim'
 " Aestetics:
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 
+" Text objects:
+Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-surround'
+Plug 'michaeljsmith/vim-indent-object'
+
 " Functionality:
 Plug 'junegunn/fzf', { 'dir': g:storedir . '/fzf', 'do': './install --all' }
     \ | Plug 'junegunn/fzf.vim'
@@ -21,10 +28,6 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/unite.vim'
     \ | Plug 'Shougo/junkfile.vim'
     \ | Plug 'tsukkee/unite-help'
 Plug 'mbbill/undotree'
-Plug 'kana/vim-textobj-user' | Plug 'kana/vim-textobj-entire'
-Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-abolish'
 Plug 'bronson/vim-visual-star-search'
 
@@ -35,11 +38,11 @@ Plug 'zchee/deoplete-jedi', { 'for': 'python' }
 " Syntax:
 Plug 'neomake/neomake'
 Plug 'deuiore/vim-hlextraws'
-Plug 'deuiore/vim-indentblank', { 'for': 'python' }
+Plug 'deuiore/vim-indentblank'
 
 " Languages:
 Plug 'othree/html5.vim', { 'for': ['html', 'twig'] }
-Plug 'evidens/vim-twig', { 'for': 'twig' }
+Plug 'lumiliet/vim-twig', { 'for': 'twig' }
 
 " Git:
 Plug 'itchyny/vim-gitbranch'

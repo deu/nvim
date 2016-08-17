@@ -8,7 +8,8 @@ let g:neomake_info_sign    = { 'text': 'i', 'texthl': 'NeomakeInfoSign'    }
 let g:neomake_python_flake8_maker = {
     \ 'args': [
         \ '--format=default',
-        \ '--ignore=E226,E24,E704,W503,W504,E127,E128,E221,E222,E265,E301'
+        \ '--ignore=E226,E24,E704,W503,W504,' .
+            \ 'E127,E128,E201,E202,E221,E222,E265,E301'
     \ ],
     \ 'errorformat':
         \ '%E%f:%l: could not compile,%-Z%p^,' .
@@ -29,6 +30,8 @@ let g:neomake_python_flake8_maker = {
 " W504: line break occurred after binary operator (default)
 " E127: continuation line over-indented for visual indent
 " E128: continuation line under-indented for visual indent
+" E201: whitespace after '('
+" E202: whitespace before ')'
 " E221: multiple spaces before operator
 " E222: multiple spaces after operator
 " E265: block comment should start with '# '
