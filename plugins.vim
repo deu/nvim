@@ -25,6 +25,7 @@ Plug 'junegunn/fzf', { 'dir': g:storedir . '/fzf', 'do': './install --all' }
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/unite.vim'
     \ | Plug 'Shougo/neoyank.vim'
     \ | Plug 'Shougo/neomru.vim'
+    \ | Plug 'tacroe/unite-mark'
     \ | Plug 'Shougo/junkfile.vim'
     \ | Plug 'tsukkee/unite-help'
 Plug 'mbbill/undotree'

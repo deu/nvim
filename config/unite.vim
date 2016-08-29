@@ -22,7 +22,7 @@ nnoremap [unite]p
         \ file_rec/git:--cached:--others:--exclude-standard<CR>
 
 " MRU:
-nnoremap [unite]m
+nnoremap [unite]u
     \ :<C-u>Unite -start-insert neomru/directory neomru/file<CR>
 
 " Buffers:
@@ -33,6 +33,9 @@ nnoremap [unite]y :<C-u>Unite history/yank<CR>
 
 " Registers:
 nnoremap [unite]r :<C-u>Unite register<CR>
+
+" Marks:
+nnoremap [unite]m :<C-u>Unite mark<CR>
 
 " Junkfiles:
 nnoremap [unite]j :<C-u>Unite -start-insert junkfile junkfile/new<CR>
