@@ -35,12 +35,15 @@ cnoremap <silent> <expr> <C-c> CmdLineLeave(':', "\<C-c>")
 " Enable spell check when typing git commit messages, and always start editing
 " from the beginning:
 autocmd FileType gitcommit
-    \ setlocal spelllang=en_gb | setlocal spell |
+    \ setlocal spelllang=en_gb spell |
     \ call setpos('.', [0, 1, 1, 0])
 
 
 " Disable the cursor line in the terminal emulator. It irritatingly stays at
 " the bottom of the window and never moves.
 " Also hide the tabline since it's an annoyance in that case anyway.
-autocmd TermOpen  * setlocal nocursorline | setlocal showtabline=0
-autocmd TermClose * setlocal cursorline   | setlocal showtabline=2
+autocmd TermOpen  * setlocal nocursorline showtabline=0
+autocmd TermClose * setlocal cursorline   showtabline=2
+
+" Disable auto line wrapping on generic text:
+autocmd FileType text setlocal textwidth=0 wrapmargin=0
