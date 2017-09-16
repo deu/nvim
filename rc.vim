@@ -40,6 +40,9 @@ set completeopt-=preview        " Disable the preview window.
 set pumheight=10                " Number of items in the menu.
 set infercase                   " Smarter case during autocompletion.
 
+" === Mouse support
+set mouse=a
+
 " === Clipboard
 if $TERM != 'linux'
     if has ('unnamedplus')
@@ -57,5 +60,6 @@ else
 endif
 " Change the cursor when changing modes (if the terminal emulator supports it):
 if $TERM != 'linux'
-    let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+    set guicursor=n-v-c:block-Cursor/lCursor-blinkon1,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+    autocmd VimLeave * set guicursor=a:block-blinkon1
 endif

@@ -14,12 +14,10 @@ nnoremap <expr> k v:count ? 'k' : 'gk'
 nnoremap <Leader><Esc> :<C-u>noh<CR>
 
 " Tabs:
-noremap <Leader><C-T> :<C-u>tabe<CR>
-noremap <Leader><C-W> :<C-u>tabc<CR>
-noremap <BS> :<C-u>tabp<CR>
-"   Note: ^ This annoying thing should be fixed in 0.3
-"   (https://github.com/neovim/neovim/issues/2048)
-noremap <C-L> :<C-u>tabn<CR>
+noremap <Leader><C-t> :<C-u>tabe<CR>
+noremap <Leader><C-w> :<C-u>tabc<CR>
+noremap <C-h> :<C-u>tabp<CR>
+noremap <C-l> :<C-u>tabn<CR>
 noremap <Leader><BS> :<C-u>-tabm<CR>
 "                 ^ Same as above.
 noremap <Leader><C-L> :<C-u>+tabm<CR>

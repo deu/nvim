@@ -23,7 +23,6 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'junegunn/fzf', { 'dir': g:storedir . '/fzf', 'do': './install --all' }
     \ | Plug 'junegunn/fzf.vim'
 Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/unite.vim'
-    \ | Plug 'Shougo/neoyank.vim'
     \ | Plug 'Shougo/neomru.vim'
     \ | Plug 'tacroe/unite-mark'
     \ | Plug 'Shougo/junkfile.vim'
@@ -44,6 +43,7 @@ Plug 'deuiore/vim-indentblank'
 " Languages:
 Plug 'othree/html5.vim', { 'for': ['html', 'twig'] }
 Plug 'lumiliet/vim-twig', { 'for': 'twig' }
+Plug 'neovimhaskell/haskell-vim', { 'for': ['haskell', 'cabal'] }
 
 " Git:
 Plug 'itchyny/vim-gitbranch'
