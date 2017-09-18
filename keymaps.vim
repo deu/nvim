@@ -18,9 +18,8 @@ noremap <Leader><C-t> :<C-u>tabe<CR>
 noremap <Leader><C-w> :<C-u>tabc<CR>
 noremap <C-h> :<C-u>tabp<CR>
 noremap <C-l> :<C-u>tabn<CR>
-noremap <Leader><BS> :<C-u>-tabm<CR>
-"                 ^ Same as above.
-noremap <Leader><C-L> :<C-u>+tabm<CR>
+noremap <Leader><C-h> :<C-u>-tabm<CR>
+noremap <Leader><C-l> :<C-u>+tabm<CR>
 
 " Make C-j and C-k the same as Down and Up when the autocomplete menu is open:
 inoremap <expr> <C-j> pumvisible() ? "\<Down>" : "\<C-j>"
