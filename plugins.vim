@@ -34,9 +34,10 @@ Plug 'bronson/vim-visual-star-search'
 " Autocompletion:
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'zchee/deoplete-jedi', { 'for': 'python' }
+Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 
 " Syntax:
-Plug 'neomake/neomake'
+Plug 'w0rp/ale'
 Plug 'deuiore/vim-hlextraws'
 Plug 'deuiore/vim-indentblank'
 

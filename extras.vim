@@ -42,8 +42,9 @@ autocmd FileType gitcommit
 " Disable the cursor line in the terminal emulator. It irritatingly stays at
 " the bottom of the window and never moves.
 " Also hide the tabline since it's an annoyance in that case anyway.
-autocmd TermOpen  * setlocal nocursorline showtabline=0
-autocmd TermClose * setlocal cursorline   showtabline=2
+" And also hide the sign column.
+autocmd TermOpen  * setlocal nocursorline showtabline=0 signcolumn=no
+autocmd TermClose * setlocal cursorline   showtabline=2 signcolumn=no
 
 " Disable auto line wrapping on generic text:
 autocmd FileType text setlocal textwidth=0 wrapmargin=0

@@ -16,6 +16,8 @@ set relativenumber              " Line numbers (relative).
 set cursorline                  " Highlight the current line.
 set colorcolumn=80              " Line length marker.
 set scrolloff=5                 " Cursor's page padding.
+set signcolumn=yes              " Always show the sign column. Well almost:
+autocmd FileType help,shell,undotree,diff,fzf,unite setlocal signcolumn=no
 
 " === Indentation
 set expandtab                   " <TAB> inserts whitespaces.

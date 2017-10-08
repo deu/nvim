@@ -1,23 +1,19 @@
-let g:neomake_verbose = 0
+let g:ale_sign_error   = 'E'
+let g:ale_sign_warning = 'W'
+let g:ale_sign_info    = 'I'
 
-let g:neomake_error_sign   = { 'text': 'E', 'texthl': 'NeomakeErrorSign'   }
-let g:neomake_warning_sign = { 'text': 'W', 'texthl': 'NeomakeWarningSign' }
-let g:neomake_message_sign = { 'text': 'M', 'texthl': 'NeomakeMessageSign' }
-let g:neomake_info_sign    = { 'text': 'i', 'texthl': 'NeomakeInfoSign'    }
+let g:ale_lint_on_text_changed = 'normal'
+let g:ale_lint_on_insert_leave = 1
 
-let g:neomake_python_flake8_maker = {
-    \ 'args': [
-        \ '--format=default',
-        \ '--ignore=E226,E24,E704,W503,W504,' .
-            \ 'E127,E128,E201,E202,E221,E222,E265,E301'
-    \ ],
-    \ 'errorformat':
-        \ '%E%f:%l: could not compile,%-Z%p^,' .
-        \ '%A%f:%l:%c: %t%n %m,' .
-        \ '%A%f:%l: %t%n %m,' .
-        \ '%-G%.%#',
-    \ 'postprocess': function('neomake#makers#ft#python#Flake8EntryProcess')
-\ }
+let g:ale_linters = {
+    \ 'python': ['flake8'],
+    \ 'haskell': ['hdevtools'],
+    \ }
+
+let g:ale_python_flake8_options =
+    \ '--format=default
+    \  --ignore=E226,E24,E704,W503,W504,
+              \ E127,E128,E201,E202,E221,E222,E265,E301'
 " (Default: E121,E123,E126,E226,E24,E704,W503,W504)
 " E121: continuation line under-indented for hanging indent (default, disabled)
 " E123: closing bracket does not match indentation of opening bracket's
@@ -36,7 +32,3 @@ let g:neomake_python_flake8_maker = {
 " E222: multiple spaces after operator
 " E265: block comment should start with '# '
 " E301: expected 1 blank line, found 0
-
-let g:neomake_python_enabled_makers = ['flake8']
-
-autocmd! BufWritePost * Neomake
