@@ -49,8 +49,5 @@ nnoremap - <C-x>
 " fzf master key:
 nmap <silent> <Space> [fzf]
 
-" Unite master key:
-nmap <silent> <Tab> [unite]
-
 " Toggle undotree:
 nnoremap <Leader>u :<C-u>UndotreeToggle<CR>

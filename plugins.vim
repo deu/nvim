@@ -22,11 +22,6 @@ Plug 'michaeljsmith/vim-indent-object'
 " Functionality:
 Plug 'junegunn/fzf', { 'dir': g:storedir . '/fzf', 'do': './install --all' }
     \ | Plug 'junegunn/fzf.vim'
-Plug 'Shougo/vimproc.vim', { 'do': 'make' } | Plug 'Shougo/unite.vim'
-    \ | Plug 'Shougo/neomru.vim'
-    \ | Plug 'tacroe/unite-mark'
-    \ | Plug 'Shougo/junkfile.vim'
-    \ | Plug 'tsukkee/unite-help'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
 Plug 'bronson/vim-visual-star-search'
