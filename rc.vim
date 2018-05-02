@@ -60,6 +60,7 @@ else
 endif
 " Change the cursor when changing modes (if the terminal emulator supports it):
 if $TERM != 'linux'
-    set guicursor=n-v-c:block-Cursor/lCursor-blinkon1,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
-    autocmd VimLeave * set guicursor=a:block-blinkon1
+    "let NVIM_TUI_ENABLE_CURSOR_SHAPE=1
+    set guicursor=n-v-c:block-Cursor/lCursor-blinkon0,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+    autocmd VimLeave * set guicursor=a:block-blinkon0
 endif

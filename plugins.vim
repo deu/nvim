@@ -6,7 +6,7 @@ command! PU PlugUpdate | PlugUpgrade
 call plug#begin()
 
 " Colors:
-Plug 'deuiore/vim-xoria256mod'
+Plug 'deu/vim-xoria256mod'
 Plug 'strange/strange.vim'
 
 " Aestetics:
@@ -20,11 +20,13 @@ Plug 'tpope/vim-surround'
 Plug 'michaeljsmith/vim-indent-object'
 
 " Functionality:
+Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'junegunn/fzf', { 'dir': g:storedir . '/fzf', 'do': './install --all' }
     \ | Plug 'junegunn/fzf.vim'
 Plug 'mbbill/undotree'
 Plug 'tpope/vim-abolish'
 Plug 'bronson/vim-visual-star-search'
+Plug 'junegunn/vim-easy-align'
 
 " Autocompletion:
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -33,13 +35,14 @@ Plug 'eagletmt/neco-ghc', { 'for': 'haskell' }
 
 " Syntax:
 Plug 'w0rp/ale'
-Plug 'deuiore/vim-hlextraws'
-Plug 'deuiore/vim-indentblank'
+Plug 'deu/vim-hlextraws'
+Plug 'deu/vim-indentblank'
 
 " Languages:
 Plug 'othree/html5.vim', { 'for': ['html', 'twig'] }
 Plug 'lumiliet/vim-twig', { 'for': 'twig' }
 Plug 'neovimhaskell/haskell-vim', { 'for': ['haskell', 'cabal'] }
+Plug 'deu/haskell-helpers.vim', { 'for': 'haskell' }
 
 " Git:
 Plug 'itchyny/vim-gitbranch'

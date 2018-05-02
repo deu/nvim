@@ -51,3 +51,7 @@ nmap <silent> <Space> [fzf]
 
 " Toggle undotree:
 nnoremap <Leader>u :<C-u>UndotreeToggle<CR>
+
+" Easy align:
+xmap <Leader>a <Plug>(EasyAlign)
+nmap <Leader>a <Plug>(EasyAlign)
