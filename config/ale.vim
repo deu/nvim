@@ -1,17 +1,18 @@
-let g:ale_enabled = 0
+let g:ale_enabled = 1
 
-let g:ale_sign_column_always = 1
+let g:ale_sign_column_always    = 1
+let g:ale_open_list             = 1
+let g:ale_keep_list_window_open = 1
 
 let g:ale_sign_error   = 'E'
 let g:ale_sign_warning = 'W'
 let g:ale_sign_info    = 'I'
 
-let g:ale_lint_on_text_changed = 'normal'
-let g:ale_lint_on_insert_leave = 1
+let g:ale_lint_on_text_changed = 'never'
 
 let g:ale_linters = {
     \ 'python': ['flake8'],
-    \ 'haskell': ['hdevtools'],
+    \ 'haskell': ['ghc-mod'],
     \ }
 
 let g:ale_python_flake8_options =
