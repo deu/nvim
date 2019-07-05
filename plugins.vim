@@ -8,6 +8,7 @@ call plug#begin()
 " Colors:
 Plug 'deu/vim-xoria256mod'
 Plug 'strange/strange.vim'
+Plug 'morhetz/gruvbox'
 
 " Aestetics:
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
@@ -40,9 +41,12 @@ Plug 'deu/vim-indentblank'
 
 " Languages:
 Plug 'othree/html5.vim', { 'for': ['html', 'twig'] }
+Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 Plug 'lumiliet/vim-twig', { 'for': 'twig' }
+Plug 'tweekmonster/django-plus.vim', { 'for': ['python'] }
 Plug 'neovimhaskell/haskell-vim', { 'for': ['haskell', 'cabal'] }
 Plug 'deu/haskell-helpers.vim', { 'for': 'haskell' }
+Plug 'lervag/vimtex', { 'for': 'tex' }
 
 " Git:
 Plug 'itchyny/vim-gitbranch'
